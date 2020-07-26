@@ -41,9 +41,5 @@ class MainPageAdapter(val pageData:MainPage,val context: Context) : Adapter<Main
         holder.binding.firstName.text = data.first_name
         holder.binding.lastName.text = data.last_name
         holder.binding.title.text = data.id.toString()
-        holder.binding.mainView.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(context, SecondActivity::class.java))
-
-        })
     }
 }
